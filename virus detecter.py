@@ -1,0 +1,9 @@
+from tkinter import *
+from tkinter import messagebox
+root = Tk()
+root.geometry("200x200")
+def msg():
+    messagebox.showwarning("alert","stop! virus detected")
+button=Button(root,text="scan for viruses",command=msg)
+button.place(x=40,y=80)
+root.mainloop()
